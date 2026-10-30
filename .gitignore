@@ -1,0 +1,81 @@
+### Build output ###
+target/
+build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+*.class
+
+### Maven wrapper (jar is downloaded on first run) ###
+.mvn/wrapper/maven-wrapper.jar
+
+### Spring Initializr boilerplate ###
+HELP.md
+
+### Secrets and local config ###
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+application-local.properties
+application-local.yml
+application-local.yaml
+application-secrets.*
+# Postman environment exports store variable VALUES, i.e. tokens and passwords
+*postman_environment.json
+
+### Logs, crash and heap dumps ###
+*.log
+logs/
+*.hprof
+hs_err_pid*
+replay_pid*
+.attach_pid*
+
+### Local data / DB dumps ###
+*.db
+*.sqlite
+*.sql.gz
+*.dump
+
+### IntelliJ ###
+.idea/
+*.iml
+*.ipr
+*.iws
+
+### Eclipse / STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Editor / merge temp files ###
+*.swp
+*~
+*.orig
+*.bak
+*.tmp
+
+### OS ###
+.DS_Store
+Thumbs.db
+desktop.ini
